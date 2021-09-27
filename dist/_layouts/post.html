@@ -20,7 +20,12 @@ layout: default
   </header>
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col col-lg-6 col-md-8 col-sm-10" itemprop="articleBody">
+      <!-- Adjust this to stack contents on top when small -->
+      <div class="col col-md-2 order-md-2">
+        <h4>Contents</h4>
+        {% toc %}
+      </div>
+      <div class="col col-lg-6 col-md-8 col-sm-10 offset-2 order-md-1" itemprop="articleBody">
         <!-- Add dropcap here, see https://css-tricks.com/snippets/css/drop-caps/ -->
         {{ content }}
       </div>
