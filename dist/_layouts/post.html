@@ -3,21 +3,31 @@ layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+  <!-- Header-->
+  <header class="masthead d-flex align-items-center">
+    <div class="container px-4 px-lg-5 text-center">
+        <h1 class="mb-1" itemprop="name headline">{{ page.title | escape }}</h1>
+        <h3 class="mb-5"><em>{{ page.description }}</em></h3>
+        <p class="post-meta">
+          <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            {{ page.date | date: date_format }}
+          </time>
+          {%- if page.author -%}
+            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+          {%- endif -%}</p>
+    </div>
   </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col col-lg-6 col-md-8 col-sm-10" itemprop="articleBody">
+        <!-- Add dropcap here, see https://css-tricks.com/snippets/css/drop-caps/ -->
+        {{ content }}
+      </div>
+    </div>
   </div>
+
+  
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
