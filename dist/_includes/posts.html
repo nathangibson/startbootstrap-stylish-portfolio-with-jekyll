@@ -1,0 +1,25 @@
+{%- if site.posts -%}
+<section class="content-section" id="pages">
+    <div class="container px-4 px-lg-5">
+        <div class="content-section-heading text-center">
+            <h3 class="text-secondary mb-0">Posts</h3>
+            <h2 class="mb-5">Recent Posts</h2>
+            <div class="row gx-0">
+            {%- for post in site.posts -%}
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="{{ post.url | relative_url }}">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <div class="h2">{{ post.title | escape }}</div>
+                            <p class="mb-0">{{ post.description | escape }}</p>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="{{ post.thumbnail }}" alt="..." />
+                </a>
+            </div>
+            {%- endfor -%}
+            </div>
+        </div>
+    </div>
+</section>
+{%- endif -%}

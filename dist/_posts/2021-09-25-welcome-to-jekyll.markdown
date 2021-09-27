@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+description: "A first post illustrating Jekyll posts"
+thumbnail: "/assets/img/portfolio-2.jpg"
 date:   2021-09-25 22:25:47 +0200
 categories: jekyll update
 ---

@@ -1,6 +1,8 @@
 ---
 layout: page
 title: About
+description: A little description on the about page.
+thumbnail: /assets/img/portfolio-1.jpg
 permalink: /about/
 ---
 
