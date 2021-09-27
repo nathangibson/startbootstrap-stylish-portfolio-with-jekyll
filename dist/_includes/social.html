@@ -1,18 +1,10 @@
 <ul class="list-inline mb-5">
   {%- if site.dribbble_username -%}<li class="list-inline-item"><a class="social-link rounded-circle text-white mr-3" href="https://dribbble.com/{{ site.dribbble_username| cgi_escape | escape }}"><i class="icon-social-dribbble"></i></a></li>{%- endif -%}
   {%- if site.facebook_username -%}<li class="list-inline-item"><a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}"><i class="icon-social-facebook"></i></a></li>{%- endif -%}
-  <!-- Removing flickr, no icon  -->
-  <!-- {%- if site.flickr_username -%}<li class="list-inline-item"><a class="social-link rounded-circle text-white mr-3" href="https://www.flickr.com/photos/{{ site.flickr_username| cgi_escape | escape }}"><i class="icon-social-flickr"></i></a></li>{%- endif -%} -->
   {%- if site.github_username -%}<li class="list-inline-item"><a class="social-link rounded-circle text-white mr-3" href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><i class="icon-social-github"></i></a></li>{%- endif -%}
   {%- if site.instagram_username -%}<li class="list-inline-item"><a class="social-link rounded-circle text-white mr-3" href="https://instagram.com/{{ site.instagram_username| cgi_escape | escape }}"><i class="icon-social-instagram"></i></a></li>{%- endif -%}
   {%- if site.linkedin_username -%}<li class="list-inline-item"><a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><i class="icon-social-linkedin"></i></a></li>{%- endif -%}
   {%- if site.pinterest_username -%}<li class="list-inline-item"><a class="social-link rounded-circle text-white mr-3" href="https://www.pinterest.com/{{ site.pinterest_username| cgi_escape | escape }}"><i class="icon-social-pinterest"></i></a></li>{%- endif -%}
-  <!-- Removing mastadon, no icon -->
-  <!-- {%- for mst in site.mastodon -%}{%- if mst.username and mst.instance -%}<li><a href="https://{{ mst.instance| cgi_escape | escape}}/@{{mst.username}}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#mastodon' | relative_url }}"></use></svg> <span class="username">{{ mst.username|escape }}</span></a></li>{%- endif -%}{%- endfor -%} -->
   {%- if site.twitter_username -%}<li class="list-inline-item"><a class="social-link rounded-circle text-white mr-3" href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}"><i class="icon-social-twitter"></i></a></li>{%- endif -%}
   {%- if site.youtube_username -%}<li class="list-inline-item"><a class="social-link rounded-circle text-white mr-3" href="https://youtube.com/{{ site.youtube_username| cgi_escape | escape }}"><i class="icon-social-youtube"></i></a></li>{%- endif -%}
-  <!-- Removing Google Plus -->
-  <!-- {%- if site.googleplus_username -%}<li><a href="https://plus.google.com/{{ site.googleplus_username| escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#googleplus' | relative_url }}"></use></svg> <span class="username">{{ site.googleplus_username| escape }}</span></a></li>{%- endif -%} -->
-  <!-- Removing RSS, no icon -->
-  <!-- {%- if site.rss -%}<li class="list-inline-item"><a class="social-link rounded-circle text-white mr-3" href="{{ 'feed.xml' | relative_url }}"><i class="icon-social-rss"></i></a></li>{%- endif -%} -->
 </ul>
