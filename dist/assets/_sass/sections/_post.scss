@@ -1,0 +1,10 @@
+// 
+// Blog post
+// 
+
+h1+p:first-letter {
+    float: left;
+    font-size: $drop-cap-size;
+    padding-top: $drop-cap-padding-top;
+    padding-right: $drop-cap-padding-right;
+  }
