@@ -1,0 +1,25 @@
+// 
+// Styles
+// 
+
+// Import variables
+@import "./stylish-portfolio/variables.scss";
+
+// Import Bootstrap
+@import "bootstrap/bootstrap.scss";
+
+// Global CSS
+@import "./stylish-portfolio/global.scss";
+
+// Components
+@import "./stylish-portfolio/components/sidebar.scss";
+@import "./stylish-portfolio/components/buttons.scss";
+
+// Sections
+@import "./stylish-portfolio/sections/cta.scss";
+@import "./stylish-portfolio/sections/footer.scss";
+@import "./stylish-portfolio/sections/map.scss";
+@import "./stylish-portfolio/sections/masthead.scss";
+@import "./stylish-portfolio/sections/portfolio.scss";
+@import "./stylish-portfolio/sections/post.scss";
+@import "./stylish-portfolio/sections/services.scss";
