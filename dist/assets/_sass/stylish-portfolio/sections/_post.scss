@@ -2,7 +2,7 @@
 // Blog post
 // 
 
-h1+p:first-letter {
+.body-text > p:first-of-type:first-letter {
     float: left;
     font-size: $drop-cap-size;
     padding-top: $drop-cap-padding-top;
