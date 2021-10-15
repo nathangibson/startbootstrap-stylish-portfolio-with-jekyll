@@ -1,6 +1,10 @@
 // 
-// Blog post
+// Article-style text
 // 
+
+.body-text {
+  max-width: $article-max-width;
+}
 
 .body-text > p:first-of-type:first-letter {
     float: left;
